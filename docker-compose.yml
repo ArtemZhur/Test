@@ -1,13 +1,11 @@
----
-
 version: '3'
 
 services:
   qa-api:
     container_name: qa-api
     build:
-      context: ./app
-      dockerfile: $PWD/Dockerfile.node
+      context: .
+      dockerfile: Dockerfile.node
     volumes:
       - ./app:/app
     ports:

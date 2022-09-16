@@ -1,0 +1,12 @@
+schemas:
+  ImageSimilarityResponse:
+    type: array
+    items:
+      type: object
+      description: course data
+      allOf:
+        - type: object
+          required:
+            - id
+            - name
+            - url
